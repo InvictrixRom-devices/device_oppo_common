@@ -16,6 +16,7 @@
     <application
             android:icon="@android:drawable/sym_def_app_icon"
             android:label="DeviceHandler"
+            android:theme="@android:style/Theme.DeviceDefault.Settings"
             >
 
         <!-- stub to ensure its loaded - DO NOT REMOVE -->
@@ -23,8 +24,7 @@
 
         <activity
             android:name=".settings.ScreenOffGestureSettings"
-            android:label="@string/screen_off_gesture_title"
-            android:theme="@style/DeviceHandlerTheme">
+            android:label="@string/screen_off_gesture_title" >
           <intent-filter>
                 <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
           </intent-filter>
@@ -38,7 +38,6 @@
 
         <activity
             android:name=".settings.SliderSettings"
-            android:theme="@style/DeviceHandlerTheme"
             android:label="@string/notification_slider">
             <intent-filter>
                 <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
